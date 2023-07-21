@@ -1,11 +1,23 @@
 import React,{ useEffect } from 'react';
-import CustomCursor from './CustomCursor'
+import CustomCursor from './CustomCursor';
+import About from '../pages/About';
+import { useHistory } from 'react-router-dom';
 
-const HeroSection = () => {
+
+const HeroSection = () => { 
+  const history = useHistory();    
+  const handleAboutTextClick = () => {
+    
+    // Your logic for handling the click event goes here
+    // For example, you can navigate to the About page
+    // using React Router or perform any other action
+    console.log('About element clicked!');
+    history.push('../pages/about');
+  };
   return (
     <>
       <div className="hero-section">
-        <div className="about-text hover-target">about</div>
+        <div onClick={handleAboutTextClick} className="about-text hover-target">about</div>
         <div className="contact-text hover-target">contact</div>
         <div className="section-center">
           <div className="container-fluid">
@@ -30,7 +42,7 @@ const HeroSection = () => {
       <div className='cursor3' id="cursor3"></div> */}
       
       {/* Link to page */}
-      <a href="" className="logo hover-target" target="_blank">
+      <a href="" className="logo hover-target">
         <img src="/images/gada logo.png" alt="" />
       </a>
 

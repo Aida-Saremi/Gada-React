@@ -26,8 +26,10 @@ const CustomCursor = () => {
       cursor2.classList.remove('hover');
       cursor3.classList.remove('hover');
     }
+    // function is called explicitly once at the beginning to 
+    // ensure a clean starting state for the custom cursors.
+    removeHoverClass();  
 
-    removeHoverClass();
 
     const hoverTargets = document.querySelectorAll('.hover-target');
     hoverTargets.forEach((target) => {
@@ -43,11 +45,13 @@ const CustomCursor = () => {
         target.removeEventListener('mouseout', removeHoverClass);
       });
     };
+    // When you use the useEffect hook with an empty dependency array ([]),
+    //  it means that the effect will only run once, specifically after the initial rendering of the component.
+    //  It won't run again on subsequent re-renders or page refreshes.
   }, []);
 
   return (
     <>
-      {/* Your JSX for the cursor elements goes here */}
       <div className="cursor" id="cursor"></div>
       <div className="cursor2" id="cursor2"></div>
       <div className="cursor3" id="cursor3"></div>
