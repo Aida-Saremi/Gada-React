@@ -1,23 +1,22 @@
 import React,{ useEffect } from 'react';
 import CustomCursor from './CustomCursor';
 import About from '../pages/About';
-import { useHistory } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom'; // Import Link to use for navigation
 
+const HeroSection = () => {
+  // const navigate = useNavigate();
+  // // Define the click handler for the "about-text" div
+  // const handleAboutTextClick = () => {
+  //   console.log('About element clicked!');
+  //   // Use the Link component to navigate to the About page
+  //   navigate('../pages/About'); 
+  //   return 
+  // };
 
-const HeroSection = () => { 
-  const history = useHistory();    
-  const handleAboutTextClick = () => {
-    
-    // Your logic for handling the click event goes here
-    // For example, you can navigate to the About page
-    // using React Router or perform any other action
-    console.log('About element clicked!');
-    history.push('../pages/about');
-  };
   return (
     <>
       <div className="hero-section">
-        <div onClick={handleAboutTextClick} className="about-text hover-target">about</div>
+        <Link to='/about' className="about-text hover-target">about</Link>
         <div className="contact-text hover-target">contact</div>
         <div className="section-center">
           <div className="container-fluid">

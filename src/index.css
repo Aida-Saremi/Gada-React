@@ -152,7 +152,11 @@
      transform: scale(0.75);
      -webkit-transition-delay: 0ms;
      transition-delay: 0ms;
- }
+     -webkit-transform: scale(0.75);
+     -moz-transform: scale(0.75);
+     -ms-transform: scale(0.75);
+     -o-transform: scale(0.75);
+}
  body.travel-on .hero-section {
      transform: rotateX(-10deg);
      -webkit-transition-delay: 0ms;
