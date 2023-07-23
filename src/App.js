@@ -27,7 +27,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
-import AboutWithSidebar from './pages/AboutWithSidebar';
+import About from './pages/About';
+import index from  "./index.css"
 
 
 const App = () => {
@@ -37,7 +38,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<HeroSection />} />
-          <Route path="/about" element={<AboutWithSidebar />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>

@@ -66,7 +66,7 @@
 
 // export default About;
 import React, { useState } from 'react';
-import Sidebar from './sidebar';
+
 
 const About = () => {
   const [isAboutOn, setAboutOn] = useState(false);
@@ -81,7 +81,7 @@ const About = () => {
 
   return (
     <>
-    <Sidebar/>
+    
     <div>
       {isAboutOn ? (
         <div className="about-close hover-target" onClick={handleAboutClose}></div>

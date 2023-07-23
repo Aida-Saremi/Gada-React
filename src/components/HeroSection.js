@@ -1,6 +1,6 @@
 import React,{ useEffect } from 'react';
 import CustomCursor from './CustomCursor';
-import About from './About';
+import About from '../pages/About';
 import { Link ,useNavigate} from 'react-router-dom'; // Import Link to use for navigation
 
 const HeroSection = () => {
