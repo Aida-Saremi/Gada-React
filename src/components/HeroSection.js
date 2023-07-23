@@ -1,6 +1,6 @@
 import React,{ useEffect } from 'react';
 import CustomCursor from './CustomCursor';
-import About from '../pages/About';
+import About from './About';
 import { Link ,useNavigate} from 'react-router-dom'; // Import Link to use for navigation
 
 const HeroSection = () => {
@@ -16,7 +16,8 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero-section">
-        <Link to='/about' className="about-text hover-target">about</Link>
+        <Link to='/about' className="about-text hover-target" >about</Link>
+       
         <div className="contact-text hover-target">contact</div>
         <div className="section-center">
           <div className="container-fluid">

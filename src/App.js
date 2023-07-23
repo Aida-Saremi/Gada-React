@@ -27,8 +27,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
-import About from './pages/About';
-import './App.css';
+import AboutWithSidebar from './pages/AboutWithSidebar';
+
 
 const App = () => {
   return (
@@ -37,7 +37,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<HeroSection />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutWithSidebar />} />
         </Routes>
       </div>
     </Router>
