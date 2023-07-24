@@ -246,89 +246,7 @@
     align-items: center;
   }
   
-   /* .about-team .about-team-item{
-    width: 32.33%;
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-  }
-  
-  .about-team .about-team-item img{
-    width: 100%;
-    height: 250px;
-  }
-  
-  
-   .about-team .about-team-item .about-slide{
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -100%;
-    height: 100%;
-    width: 100%;
-    background-color: #b98f73;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    transition:all .4s ease-in ;
-    
-  }
-  .about-team .about-team-item:hover .about-slide{
-    opacity: 1;
-    bottom: 0;
-    
-  }
-  
-.about-team .about-team-item .about-slide ul{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 30px;
-  }
-  .about-team .about-team-item .about-slide ul li {
-    list-style: none !important;
-    display: flex;
-    text-align: center;
-  }
-  
-.about-team .about-team-item .about-slide ul li svg{
-   font-size: 20px;
-   color: #fff; 
    
-  }
-  
-.about-team .about-team-item .about-slide ul li a:hover svg{
-    color: #1f2029;
-  }
-  
-.about-team .about-team-item .about-slide h4{
-    margin: 12px 0;
-  } 
-  .about-slide .info-item{
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  .about-slide .info-item label{
-    font-size: 1rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  .about-slide .info-item p{
-    display: flex;
-    font-size: .8rem;
-    color: #1f2029;
-    margin-left: 5px;
-    text-align: center;
-    justify-content: center;
-  } */
 
   .card {
     width: 290px;
@@ -868,4 +786,127 @@
      }
  }
 
+/* styles.css */
+
+/* Sidebar container */
+.sidebar {
+    width: 150px;
+    height: 100%;
+    margin-top: 0 !important;
+    background-color:1f2029;
+    /*Setyourdesiredbackgroundcolor*/position: fixed;
+    padding: auto;
+    left: 0;
+    transform: translateX(-250px);
+    /*Hidethesidebarbydefault*/transition: transform 0.3s ease;
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    border-right: 2px solid #fff; /* Set your desired border color and width */
+}
+  
+  /* Open the sidebar when the 'open' class is applied */
+  .sidebar.open {
+    transform: translateX(0);
+    margin-top: 0 !important;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  /* .Sidebar-Box {
+   padding-top: 25px;
+   padding-left: 35px;
+} */
  
+/* Style for the sidebar items */
+.Sidebar-item {
+    padding-top: 27px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.3s ease; /* Apply transition for font color change */
+  }
+  
+  .Sidebar-item:hover {
+    color: #b98f73; /* Set your desired hover font color */
+  }
+  
+  /* Hamburger menu */
+  .hamburger-menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  
+  .hamburger-menu .line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #fff; /* Set your desired line color */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Rotate and move lines to create a close icon effect when the 'open' class is applied */
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    -moz-transform: translateY(-10px) rotate(45deg);
+    -ms-transform: translateY(-10px) rotate(45deg);
+    -o-transform: translateY(-10px) rotate(45deg);
+}
+  
+  /* Close icon for the sidebar */
+  .close-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff; /* Set your desired close icon color */
+  }
+  
+  /* X symbol for the close icon */
+  .close-icon::before,
+  .close-icon::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    background-color: #fff; /* Set your desired close icon color */
+  }
+  
+  .close-icon::before {
+    transform: rotate(45deg);
+  }
+  
+  .close-icon::after {
+    transform: rotate(-45deg);
+  }
+  
+  /* Hide hamburger menu when sidebar is open */
+  .sidebar.open .hamburger-menu {
+    display: none;
+  }
+  

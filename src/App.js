@@ -28,7 +28,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HeroSection from './components/HeroSection';
 import About from './pages/About';
-import index from  "./index.css"
+import "./index.css"
 
 
 const App = () => {

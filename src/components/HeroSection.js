@@ -1,17 +1,10 @@
 import React,{ useEffect } from 'react';
 import CustomCursor from './CustomCursor';
 import About from '../pages/About';
-import { Link ,useNavigate} from 'react-router-dom'; // Import Link to use for navigation
+import { Link } from 'react-router-dom'; // Import Link to use for navigation
 
 const HeroSection = () => {
-  // const navigate = useNavigate();
-  // // Define the click handler for the "about-text" div
-  // const handleAboutTextClick = () => {
-  //   console.log('About element clicked!');
-  //   // Use the Link component to navigate to the About page
-  //   navigate('../pages/About'); 
-  //   return 
-  // };
+
 
   return (
     <>

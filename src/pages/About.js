@@ -67,31 +67,36 @@
 // export default About;
 import React, { useState } from 'react';
 
+import Sidebar from '../components/SideBarSimple';
 
 const About = () => {
-  const [isAboutOn, setAboutOn] = useState(false);
+  // const [isAboutOn, setAboutOn] = useState(false);
 
-  const handleAboutOpen = () => {
-    setAboutOn(true);
-  };
+  // const handleAboutOpen = () => {
+  //   setAboutOn(true);
+  // };
 
-  const handleAboutClose = () => {
-    setAboutOn(false);
-  };
+  // const handleAboutClose = () => {
+  //   setAboutOn(false);
+  // };
+
 
   return (
     <>
-    
-    <div>
-      {isAboutOn ? (
-        <div className="about-close hover-target" onClick={handleAboutClose}></div>
-      ) : (
-        <div className="about-text" onClick={handleAboutOpen}></div>
-      )}
-      {/* Rest of your About page content */}
-      <div >
-      <div className="about-close hover-target" ></div>
-      <div className="section-center">
+    <div className="about-page">
+      
+      <Sidebar/>
+
+      {/* <div className="about-content">
+        {isAboutOn ? (
+          <div className="about-close hover-target" onClick={handleAboutClose}></div>
+        ) : (
+          <div className="about-text" onClick={handleAboutOpen}></div>
+        )} */}
+       {/* Rest of your About page content */}
+      
+       {/* <div className="about-close hover-target" ></div> */}
+       <div className="section-center">
         <div className="container">
           <div className="row">
             <div className="section-title">
@@ -180,9 +185,11 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+       </div>
+       </div>
       
+       {/* </div> */}
+       <div >
     </div>
      
      </>
