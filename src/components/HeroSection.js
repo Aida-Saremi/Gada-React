@@ -10,8 +10,12 @@ const HeroSection = () => {
         <Link to="/about" className="about-text hover-target">
           about
         </Link>
-
-        <div className="contact-text hover-target">contact</div>
+        
+        <Link to="/contact" className="contact-text hover-target">
+          contact
+        </Link>
+        
+        
         <div className="section-center">
           <div className="container-fluid">
             <div className="row justify-content-center">
@@ -33,8 +37,14 @@ const HeroSection = () => {
                   >
                     Portfolio
                   </Link>
-
-                  <span className="nature hover-target">Blog</span>
+                  
+                  <Link
+                    to="/Blog"
+                    className="nature hover-target "
+                  >
+                    Blog
+                  </Link>
+                
                 </p>
               </div>
             </div>
