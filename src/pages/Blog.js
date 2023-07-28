@@ -15,7 +15,7 @@ const Blog = () => {
         </div>
 
         <div className="row blogs">
-          <div className="blog-content">
+          <div className="blog-content col-md-6 col-lg-4">
             <img src="../images/design.webp" alt="" />
             <div className="blog-description">
             <div className="blog-info">
@@ -32,7 +32,7 @@ const Blog = () => {
               <Link to="/blog/1">See more</Link>
             </div>
           </div>
-          <div className="blog-content">
+          <div className="blog-content col-md-6 col-lg-4">
             <img src="../images/webbg.jpg" alt="" />
             <div className="blog-description">
             <div className="blog-info">
@@ -49,7 +49,7 @@ const Blog = () => {
               <Link to="/blog/2">See more</Link>
             </div>
           </div>
-          <div className="blog-content">
+          <div className="blog-content col-md-6 col-lg-4">
             <img src="../images/aboutsis.jpg" alt="" />
             <div className="blog-description">
             <div className="blog-info">
