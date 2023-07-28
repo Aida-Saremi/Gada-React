@@ -1013,3 +1013,94 @@ body.nature-on .nature-section {
   color: #c93e3e;
   cursor: pointer;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Rest of your existing styles */
+
+/* Add a media query for smaller screen sizes (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  .hero-section h1 {
+    font-size: 11vw; /* Adjust font size for the hero section heading */
+  }
+
+  .hero-section .dancing {
+    font-size: 15px; /* Adjust font size for the dancing text */
+    transform: translateY(-80px) rotate(-45deg); /* Adjust positioning of the dancing text */
+  }
+
+  /* Adjust font size and spacing for the "dancing" span */
+  .hero-section .dancing span {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+  /* Adjust font size for paragraphs */
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  /* Adjust font size for section titles */
+  .section-title h1 {
+    font-size: 20px;
+  }
+
+  /* Adjust font size and spacing for "about-text" */
+  .about-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* Adjust font size and spacing for the sidebar items */
+  .Sidebar-item {
+    font-size: 16px;
+  }
+
+  /* Adjust font size and spacing for the close icon */
+  .close-icon::before,
+  .close-icon::after {
+    width: 16px;
+  }
+
+  /* Adjust font size for service-item title */
+  .service-item h4 {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust font size for blog title */
+  .blog-content .blog-description h2 {
+    font-size: 1rem;
+  }
+
+  /* Adjust font size for blog content */
+  .blog-content .blog-description p {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust font size for contact form inputs */
+  .contact-form .input-group input {
+    width: 100%; /* Make the input fields take the full width on mobile */
+  }
+
+  /* Adjust font size for contact form submit button */
+  .contact-form input[type="submit"] {
+    width: 100%; /* Make the submit button take the full width on mobile */
+  }
+
+  /* Adjust font size for service-item icons */
+  .card .item svg {
+    width: 20px;
+  }
+
+  /* Hide the cursor on mobile devices */
+  .cursor,
+  .cursor2,
+  .cursor3 {
+    display: none;
+  }
+}
