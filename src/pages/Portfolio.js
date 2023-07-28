@@ -4,10 +4,7 @@ import { Link } from "react-router-dom"; // Import Link to use for navigation
 const Portfolio = () => {
     // Create an array of project objects with image source and website URL
     const projects = [
-      {
-        imageSrc: "../images/vervet.png",
-        websiteUrl: "https://www.vervet.no",
-      },
+      
       {
         imageSrc: "../images/menu.png",
         websiteUrl: "https://www.example2.com",
@@ -32,6 +29,10 @@ const Portfolio = () => {
       {
         imageSrc: "../images/7.jpg",
         websiteUrl: "https://www.example2.com",
+      },
+      {
+        imageSrc: "../images/vervet.PNG",
+        websiteUrl: "https://www.vervet.no",
       },
 
       // Add more project objects as needed
