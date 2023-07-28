@@ -14,6 +14,7 @@ const Services = () => {
         <div className="container">
           <div className="row">
             <div className="title">
+            <h5>* This website is currently under development and is not yet complete. * </h5>
               <h2>Services</h2>
               <p>This section is about Gada team description and expertise.</p>
             </div>

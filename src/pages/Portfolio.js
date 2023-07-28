@@ -10,28 +10,28 @@ const Portfolio = () => {
           },
       {
         imageSrc: "../images/menu.png",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
 
       {
         imageSrc: "../images/restuartant.png",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
       {
         imageSrc: "../images/web-learning.png",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
       {
         imageSrc: "../images/GADA.co.png",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
       {
         imageSrc: "../images/restaurant Aida.png",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
       {
         imageSrc: "../images/7.jpg",
-        websiteUrl: "https://www.example2.com",
+        websiteUrl: "/",
       },
     
 
@@ -47,6 +47,7 @@ const Portfolio = () => {
           <div className="container">
             <div className="row">
               <div className="col-12">
+              <h5>* This website is currently under development and is not yet complete. * </h5>
                 <h3>Portfolio</h3>
                 <p>
                   This section is about the Gada company and the Gada team's

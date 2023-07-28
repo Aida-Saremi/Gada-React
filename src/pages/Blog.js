@@ -10,6 +10,7 @@ const Blog = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12">
+          <h5>* This website is currently under development and is not yet complete. * </h5>
             <h3>Blog</h3>
           </div>
         </div>

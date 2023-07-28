@@ -520,6 +520,12 @@ a {
   background-color: transparent;
   margin: 15px;
 }
+.item a {
+  color: #b98f73;
+  text-decoration: none;
+  background-color: transparent;
+  margin: 0;
+}
 a:hover {
   opacity: 1;
   color: #eec6aa;
