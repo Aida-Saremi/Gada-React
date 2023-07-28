@@ -16,26 +16,26 @@ const Blog = () => {
 
         <div className="row blogs">
           <div className="blog-content col-md-6 col-lg-4">
-            <img src="../images/design.webp" alt="" />
-            <div className="blog-description">
-            <div className="blog-info">
-                <span>
+             <img src="../images/design.webp" alt="" />
+              <div className="blog-description">
+               <div className="blog-info">
+                 <span>
                   <i className="fas fa-user-shield"></i> GADA
-                </span>
-                <span>
+                 </span>
+                 <span>
                   <i className="fas fa-calendar-alt"></i> 10 00 March
-                </span>
-              </div>
-              <h2> How to become a web designer</h2>
+                 </span>
+                </div>
+                <h2> How to become a web designer</h2>
              
-              <p>Lorem Epsom is a mock text with an graphic designers</p>
-              <Link to="/blog/1">See more</Link>
-            </div>
+                <p>Lorem Epsom is a mock text with an graphic designers</p>
+                <Link to="/blog/1">See more</Link>
+               </div>
           </div>
           <div className="blog-content col-md-6 col-lg-4">
             <img src="../images/webbg.jpg" alt="" />
             <div className="blog-description">
-            <div className="blog-info">
+             <div className="blog-info">
                 <span>
                   <i className="fas fa-user-shield"></i> GADA
                 </span>
@@ -52,7 +52,7 @@ const Blog = () => {
           <div className="blog-content col-md-6 col-lg-4">
             <img src="../images/aboutsis.jpg" alt="" />
             <div className="blog-description">
-            <div className="blog-info">
+             <div className="blog-info">
                 <span>
                   <i className="fas fa-user-shield"></i> GADA
                 </span>
