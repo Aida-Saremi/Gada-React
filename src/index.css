@@ -518,6 +518,7 @@ a {
   color: #b98f73;
   text-decoration: none;
   background-color: transparent;
+  margin: 15px;
 }
 a:hover {
   opacity: 1;
@@ -949,4 +950,15 @@ body.nature-on .nature-section {
 /* Hide hamburger menu when sidebar is open */
 .sidebar.open .hamburger-menu {
   display: none;
+}
+
+/* portfolio container */
+.image-container {
+  height: 200px; /* Set the desired height for the images */
+  overflow: hidden; /* Hide any overflowing parts of the images */
+}
+
+.image-container img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Allow the image to scale its height proportionally */
 }

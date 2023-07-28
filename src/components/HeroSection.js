@@ -27,7 +27,13 @@ const HeroSection = () => {
                     Services
                   </Link>
 
-                  <span className="wildlife hover-target">Portfolio</span>
+                  <Link
+                    to="/Portfolio"
+                    className="wildlife hover-target "
+                  >
+                    Portfolio
+                  </Link>
+
                   <span className="nature hover-target">Blog</span>
                 </p>
               </div>

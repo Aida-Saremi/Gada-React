@@ -28,6 +28,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HeroSection from "./components/HeroSection";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
 import "./index.css";
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/" element={<HeroSection />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/Portfolio" element={<Portfolio/>} />
         </Routes>
       </div>
     </Router>
