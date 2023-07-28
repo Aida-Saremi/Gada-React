@@ -1,43 +1,36 @@
-// Sidebar.js
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
-import '../index.css'; // Make sure to import the CSS file
+// // Sidebar.js
+// import React, { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import '../index.css'; // Make sure to import the CSS file
+// import HamburgerMenu from './HamburgerMenu';
 
-const Sidebar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+// const Sidebar = () => {
+//   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const handleHamburgerClick = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+//   const handleHamburgerClick = () => {
+//     setSidebarOpen(!sidebarOpen);
+//   };
 
-  return (
-    <>
-      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-        
+//   return (
+//     <>
+//       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
 
-        {/* Rest of your sidebar content */}
-        <ul className='Sidebar-Box'>
-  <li className='Sidebar-item'>
-    <Link to='/' className='Sidebar-item' >Home</Link>
-  </li>
-  
-  <li className='Sidebar-item'>
-    <Link to='/about' className='Sidebar-item'>About</Link>
-  </li>
-  
- 
-</ul>
+//         {/* Rest of your sidebar content */}
+//         <ul className='Sidebar-Box'>
+//   <li className='Sidebar-item'>
+//     <Link to='/' className='Sidebar-item' >Home</Link>
+//   </li>
 
-      </div>
+//   <li className='Sidebar-item'>
+//     <Link to='/about' className='Sidebar-item'>About</Link>
+//   </li>
 
-      {/* Hamburger menu */}
-      <div className={`hamburger-menu ${sidebarOpen ? 'open' : ''}`} onClick={handleHamburgerClick}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-    </>
-  );
-};
+// </ul>
 
-export default Sidebar;
+//       </div>
+
+//     </>
+//   );
+// };
+
+// export default Sidebar;
