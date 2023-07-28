@@ -960,7 +960,7 @@ body.nature-on .nature-section {
 
 .image-container img {
   width: 100%; /* Make the image take the full width of the container */
-  height: auto; /* Allow the image to scale its height proportionally */
+  height: 180px; /* Allow the image to scale its height proportionally */
 }
 /* contact */
 .contact-form{
